@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unicorn Homeschool Academy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            background: linear-gradient(135deg, #fce4ec, #f3e5f5, #e8eaf6, #e0f7fa);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 1rem 2rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #6a1b9a;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #7b1fa2;
+            font-style: italic;
+        }
+
+        .unicorn {
+            font-size: 4rem;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        main {
+            max-width: 700px;
+            width: 90%;
+            padding: 2rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h2 {
+            color: #6a1b9a;
+            margin-bottom: 0.75rem;
+            font-size: 1.4rem;
+        }
+
+        .card p, .card li {
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card ul li::before {
+            content: "\2728 ";
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #9e9e9e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span class="unicorn">&#x1F984;</span>
+        <h1>Unicorn Homeschool Academy</h1>
+        <p>Where curiosity leads the way</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Welcome!</h2>
+            <p>
+                We're a homeschool family exploring the world one subject at a time.
+                This website is one of our projects &mdash; we built it together to learn
+                how the internet works!
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>What We're Learning</h2>
+            <ul>
+                <li>How websites are made (HTML, CSS &amp; the web)</li>
+                <li>Reading, writing &amp; storytelling</li>
+                <li>Math &amp; logic puzzles</li>
+                <li>Science experiments &amp; nature walks</li>
+                <li>Art, music &amp; creativity</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>How We Built This Site</h2>
+            <p>
+                This page is written in <strong>HTML</strong> (the structure) and
+                <strong>CSS</strong> (the style). It's hosted for free on
+                <strong>GitHub Pages</strong> and uses <strong>Let's Encrypt</strong>
+                for HTTPS &mdash; that little lock icon in your browser's address bar
+                that means the connection is secure.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Unicorn Homeschool Academy
+    </footer>
+</body>
+</html>
